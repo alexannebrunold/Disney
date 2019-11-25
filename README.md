@@ -1,1 +1,7 @@
-# hetic-w1p2022-09
+Nawel BERRICHI
+Alexanne BRUNOLD
+Rémy DUBLED
+Oussman NDIAYE
+Jarce Lemma Vinel BOUKORO
+Hakim CHEBOUB
+Clément GUIDON
