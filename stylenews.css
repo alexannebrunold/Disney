@@ -1,0 +1,42 @@
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+/*Main */ 
+
+/*Images*/
+img{
+  width: 100%;
+  height: auto;
+}
+
+
+p{
+  text-align: center;
+  font-size: 14px;
+}
+
+h1{
+  text-align: center;
+}
+/*Bouton*/
+.button{
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  text-align: center;
+  width: auto;
+  float: right;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: rgb(18, 106, 188);
+}

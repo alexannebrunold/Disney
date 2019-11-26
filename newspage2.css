@@ -1,0 +1,44 @@
+aside{
+  display: flex;
+  flex-direction: column;
+justify-content:space-around ;
+align-content: space-around;
+}
+
+video{
+  width: 100%;
+  height: auto;
+}
+
+/*Main*/
+
+.p{
+  font-size: 14px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.déguisement{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+aside .button{
+  display: block;
+  margin-left: 36%;
+}
+
+.button{
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  text-align: center;
+  width: 50px;
+  
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
