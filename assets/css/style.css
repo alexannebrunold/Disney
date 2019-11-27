@@ -43,6 +43,7 @@ header {
   display: grid;
   grid-template-columns: repeat(22, 1fr);
   grid-template-rows: 1fr;
+  z-index: 50;
 }
 
 header .logo {
@@ -153,6 +154,20 @@ nav {
   top: 2px;
 }
 
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+  min-height: 305px;
+}
+
+.container-fluid {
+  grid-column: 2 / span 20;
+  grid-row: 1;
+}
+
 
 /* footer */
 footer {
@@ -234,7 +249,6 @@ footer a i {
 }
 .youtube i {
   font-size: 27px;
-
 }
 
 .instagram {
@@ -285,14 +299,19 @@ footer a i {
   }
 
   header .logo {
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 2;
   }
 
   .users {
     display: inline;
-    grid-column: 16 / span 3;
-    font-size: 24px;
-    top: 8px;
+    grid-column: 18 / span 2;
+    font-size: 16px;
+    top: 33.5px;
+    height: 40px;
+  }
+
+  .users .bonhomme {
+    left: 1px;
   }
 
   .menu-burger {
@@ -300,14 +319,82 @@ footer a i {
   }
   
   .shop {
-    grid-column: 19 / span2;
-    font-size: 30px;
-    top: 6px;
+    grid-column: 20 / span 2;
+    font-size: 20px;
+    top: 30px;
+    height: 40px;
   }
 
-  .menu-desktop {
-    grid-column: 20;
-    top: 6px;
+  .shop .panier{
+    position: relative;
+    top: 3px;
+  }
+
+  header .menu-desktop{
+    grid-column: 7 / span 9;
+    grid-row: 1;
+  }
+
+  header .menu-desktop ul li a i {
+    font-size: 18px;
+  }
+ 
+  header .menu-desktop ul li a:hover,
+  a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+ 
+  header .menu-desktop ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+  }
+
+  header a .text-small {
+    position: relative;
+    top: 2px;
+    left: -2px;
+  }
+
+  /* Main */
+  
+  main {
+    min-height: 410px;
+  }
+
+  /* Footer */
+  footer {
+    height: 70px;
+  }
+
+  .nastia {
+    width: 25%;
+    text-align: left;
+  }
+
+  .nastia img.desktop {
+    width: 150px;
+  }
+
+  .menu-footer {
+    width: 45%;
+  }
+
+  .menu-footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+  }
+
+  .icons-footer {
+    width: 30%;
+    text-align: right;
   }
 
 }
