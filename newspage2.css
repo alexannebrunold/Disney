@@ -10,8 +10,13 @@ video{
   height: auto;
 }
 
-p{
+h1{
+  font-family: 'Noto';
   font-size: 14px;
+  text-align: center;
+}
+p{
+  font-size: 10px;
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
 }
@@ -26,7 +31,7 @@ hr{
 /*Main*/
 
 .p{
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
   vertical-align: center;
   font-family: 'Noto Sans', sans-serif;
@@ -50,7 +55,7 @@ aside .button{
   padding: 6px 10px;
   text-align: center;
   width: 50px;
-  font-size: 12px;
+  font-size: 9px;
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Noto Sans', sans-serif;
@@ -65,7 +70,12 @@ aside .button{
 ul.pagination{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
  list-style: none;
+ margin-top: 15px;
+ margin-bottom: 5px;
+ 
+ 
 }
 
 ul.pagination a{
