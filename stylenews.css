@@ -1,0 +1,93 @@
+body{
+  margin:0;
+  padding: 0 ;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+/*Main */ 
+
+h1{
+  text-align: center;
+}
+
+/*Images*/
+.img1{
+  width: 100%;
+  height: auto;
+}
+
+
+p{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+}
+/*Bouton*/
+.button{
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  text-align: center;
+  width: auto;
+  float: right;
+  font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: rgb(18, 106, 188);
+}
+
+@media (min-width:600px){
+  section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: auto;
+   
+  }
+  .img1{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  article{
+    margin:5px;
+  }
+}
+
+
+/*Pagination*/
+
+ul.pagination{
+  display: flex;
+  flex-direction: row;
+ list-style: none;
+ justify-content: center;
+ align-content: space-between;
+ 
+}
+
+ul.pagination a{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 100%;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
