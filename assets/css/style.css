@@ -8,6 +8,90 @@ body {
   font-size: 0.9em;
 }
 
+.element-form {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  background-color: rgb(247, 247, 247);
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  color: #495057;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-1 {
+width: 8%;
+margin-left: 2px;
+}
+​
+.m-2{
+  width: 16%;
+  margin-left: 2px;
+}
+
+.m-3{
+  width: 24%;
+  margin-left: 2px;
+}
+​
+.m-4{
+  width: 32%;
+  margin-left: 2px;
+}
+​
+.m-5{
+  width: 40%;
+  margin-left: 2px;
+}
+​
+.m-6{
+  width: 48%;
+  margin-left: 2px;
+}
+​
+.m-7{
+  width: 56%;
+  margin-left: 2px;
+}
+​
+.m-8{
+  width: 64%;
+  margin-left: 2px;
+}
+​
+.m-9{
+  width: 72%;
+  margin-left: 2px;
+}
+​
+.m-10{
+  width: 80%;
+  margin-left: 2px;
+}
+​
+.m-11{
+  width: 88%;
+  margin-left: 2px;
+}
+​
+.m-12{
+  width: 100%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -59,7 +143,9 @@ header .logo {
 }
 
 header .logo img {
-  width: 130px;
+  width: 60px;
+  position: relative;
+  top: -7px;
 }
 
 header a {
@@ -283,6 +369,65 @@ footer a i {
     height: 75px;
   }
 
+  .d-1 {
+    width: 8%;
+    margin-left: 2px;
+    }
+    ​
+    .d-2{
+      width: 16%;
+      margin-left: 2px;
+    }
+    
+    .d-3{
+      width: 24%;
+      margin-left: 2px;
+    }
+    ​
+    .d-4{
+      width: 32%;
+      margin-left: 2px;
+    }
+    ​
+    .d-5{
+      width: 40%;
+      margin-left: 2px;
+    }
+    ​
+    .d-6{
+      width: 48%;
+      margin-left: 2px;
+    }
+    ​
+    .d-7{
+      width: 56%;
+      margin-left: 2px;
+    }
+    ​
+    .d-8{
+      width: 64%;
+      margin-left: 2px;
+    }
+    ​
+    .d-9{
+      width: 72%;
+      margin-left: 2px;
+    }
+    ​
+    .d-10{
+      width: 80%;
+      margin-left: 2px;
+    }
+    ​
+    .d-11{
+      width: 88%;
+      margin-left: 2px;
+    }
+    ​
+    .d-12{
+      width: 100%;
+    }
+
   .mobile {
     display: none;
   }
@@ -300,6 +445,10 @@ footer a i {
 
   header .logo {
     grid-column: 2 / span 2;
+  }
+
+  header .logo img {
+    width: 130px;
   }
 
   .users {
