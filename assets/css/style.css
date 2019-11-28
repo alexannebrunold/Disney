@@ -1,11 +1,79 @@
 /* generique */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
 
+/* ---------- Font face ----------- */
+
+@font-face {
+  font-family: "nunitoregular";
+  src: url("../fonts/nunito-regular-webfont.woff2") format("woff2"),
+    url("../fonts/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "New Waltograph";
+  src: url("../fonts/walter-webfont.woff2") format("woff2"),
+    url("../fonts/walter-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "distant_galaxyregular";
+  src: url("../fonts/distgrg_-webfont.woff2") format("woff2"),
+    url("../fonts/distgrg_-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pirate_scrollregular";
+  src: url("pirate_scroll-webfont.woff2") format("woff2"),
+    url("pirate_scroll-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------- Animation ----------- */
+
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  40% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  80% {
+    left: -180%;
+  }
+  100% {
+    left: -180%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans", sans-serif;
+  /*font-family: "Noto Sans", sans-serif;*/
+  font-family: "nunitoregular", sans serif;
   font-size: 0.9em;
+}
+
+h1,
+h2 {
+  font-family: "New Waltograph", sans serif;
 }
 
 .element-form {
@@ -18,65 +86,6 @@ body {
   display: block;
   color: #495057;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.m-1 {
-  width: 8%;
-  margin-left: 2px;
-}
-​ .m-2 {
-  width: 16%;
-  margin-left: 2px;
-}
-
-.m-3 {
-  width: 24%;
-  margin-left: 2px;
-}
-​ .m-4 {
-  width: 32%;
-  margin-left: 2px;
-}
-​ .m-5 {
-  width: 40%;
-  margin-left: 2px;
-}
-​ .m-6 {
-  width: 48%;
-  margin-left: 2px;
-}
-​ .m-7 {
-  width: 56%;
-  margin-left: 2px;
-}
-​ .m-8 {
-  width: 64%;
-  margin-left: 2px;
-}
-​ .m-9 {
-  width: 72%;
-  margin-left: 2px;
-}
-​ .m-10 {
-  width: 80%;
-  margin-left: 2px;
-}
-​ .m-11 {
-  width: 88%;
-  margin-left: 2px;
-}
-​ .m-12 {
-  width: 100%;
 }
 
 .text-center {
@@ -282,6 +291,662 @@ main {
   font-size: 1.2em;
 }
 
+.hractualités {
+  margin-top: 0;
+  width: 150px;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: -45px;
+  margin-bottom: -25px;
+}
+
+.hr1 {
+  width: 110px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+.section article {
+  width: 100%;
+}
+article {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+/*Images*/
+.img1 {
+  width: 100%;
+  height: auto;
+}
+.img2 {
+  width: 100%;
+  height: auto;
+}
+
+/*Textes*/
+
+.p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* ------------ Features ------------- */
+
+.features {
+  font-family: "nunitoregular", sans serif;
+  font-size: 0.8em;
+  margin: 0.3em;
+}
+
+.features h2 {
+  font-family: "New Waltograph", sans serif;
+  font-size: 2.5em;
+  color: #253b56;
+  text-align: center;
+}
+/* --------- Première image -------- */
+
+.first {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  transition: width 0.5s;
+}
+
+.first:hover {
+  width: 100%;
+}
+/* --------- description produit -------- */
+.container-features {
+  display: flex;
+}
+
+img {
+  width: 50%;
+  transition: width 0.5s;
+}
+img:hover {
+  width: 60%;
+}
+
+article h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0.3em;
+  font-family: "nunitoregular", sans serif;
+  text-align: center;
+}
+
+article p {
+  padding: 0.7em;
+  color: grey;
+  text-align: center;
+}
+
+/* --------- Catalogue attractions -------- */
+.attractions-proposal {
+  background-color: rgb(18, 106, 180);
+  overflow-x: hidden;
+}
+.attractions-proposal h2 {
+  font-family: "New Waltograph", sans serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/* --------- Carrousel attraction -------- */
+div#slider {
+  width: 80%;
+  max-width: 1000px;
+  padding-bottom: 2em;
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  animation: 10s linear 1s infinite running alternate-reverse slide;
+}
+
+div#slider figure .slide {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  position: relative;
+}
+
+div#slider figure .slide img {
+  width: 100%;
+  box-shadow: 3px 5px 10px rgb(15, 15, 15);
+}
+
+/* --------- Boutton en savoir plus -------- */
+
+.slide .pointer {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+}
+
+.slide .pointer a {
+  text-decoration: none;
+  color: white;
+  font-family: "nunitoregular";
+  border: 1px solid white;
+  padding: 0 0.5em 0.3em 0.5em;
+  border-radius: 0.2em;
+  font-size: 0.7em;
+  position: relative;
+  top: -0.5em;
+}
+
+.slide .pointer:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide .pointer a:hover {
+  background-color: rgb(12, 166, 238, 0.4);
+  border: 1px solid rgb(12, 166, 238, 0.4);
+}
+
+/* Page contact */
+
+.content-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-contact article {
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+textarea.element-form {
+  height: auto;
+  padding: 0;
+  line-height: normal;
+}
+.section-contact {
+  display: flex;
+}
+
+article ul li {
+  padding-bottom: 10px;
+}
+
+article ul li i {
+  font-size: 18px;
+  color: rgb(18, 106, 180);
+}
+
+.map {
+  border: 0;
+  width: 100%;
+  height: 18em;
+}
+
+/* page login */
+
+.img-main {
+  grid-row: 1;
+  grid-column: 1 / span 22;
+  height: 30em;
+  position: relative;
+  top: -8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.block-center {
+  margin: auto;
+}
+
+.button {
+  display: block;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 15px;
+  text-align: center;
+  min-width: 80px;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form a {
+  font-size: 0.8em;
+}
+
+form hr {
+  width: 65%;
+}
+
+.text-small {
+  text-transform: lowercase;
+}
+
+.text-decoration:hover {
+  text-decoration: underline;
+}
+
+.button:hover {
+  background-color: rgb(18, 106, 188);
+  border: 1px solid rgb(18, 106, 188);
+  color: white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.img-main img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.img-main form {
+  width: 250px;
+  min-height: 150px;
+  padding: 15px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+
+.opacity-img {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.img-main h1 {
+  font-size: 1.4em;
+}
+
+.img-main p {
+  position: relative;
+  top: -10px;
+}
+
+.padding-input {
+  padding: 10px;
+}
+
+/* Page shop */
+
+.banner {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  top: -29px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.flex-box {
+  width: 100%;
+}
+
+article.img {
+  width: 100%;
+  height: 200px;
+}
+
+article.img img {
+  width: 100%;
+  height: 100%;
+}
+
+article .product.element-form {
+  margin-left: 2em;
+  height: 32px;
+  line-height: 50px;
+  width: 86%;
+}
+
+.content-product-text {
+  text-align: center;
+}
+
+.content-product-text strong:first-child {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.content-product-text strong:last-child {
+  display: block;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.price {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+hr.mobile {
+  width: 80%;
+}
+
+.price .form {
+  padding: 7px 0 7px 0;
+}
+
+.form button {
+  margin: auto;
+  font-size: 14px;
+}
+
+.attractions img {
+  width: 100%;
+}
+
+.star-wars h2 {
+  font-family: "distant_galaxyregular";
+  text-align: center;
+  margin: 0.5em;
+  font-size: 1.6em;
+}
+
+.pirates h2 {
+  font-family: "pirate_scrollregular";
+  text-align: center;
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+.castle h2 {
+  font-family: "New Waltograph";
+  text-align: center;
+  margin: 0.5em;
+  font-size: 2.2em;
+}
+
+.attractions p {
+  text-align: justify;
+  margin: 1.5em;
+}
+/* ---------- Bouton pré commande----------- */
+.button-attractions {
+  background-color: #136ab4;
+  border: none;
+  padding: 0.6em 1em;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin: auto;
+  width: 40%;
+}
+
+.button-attractions:hover {
+  box-shadow: 0.2em 0.2em 0.65em grey;
+}
+
+.container-button {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+/*Main*/
+.divimg {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+}
+
+.p2 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  color: white;
+  font-family: "Nunito";
+}
+
+.activities {
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Img*/
+
+.imgnewyear {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.section-n .imgnewyear {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.section-n:hover .imgnewyear {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+}
+
+.section-n {
+  margin-bottom: 30px;
+}
+.section2 {
+  margin-bottom: 15px;
+}
+.containt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.img3 {
+  width: 100%;
+  height: auto;
+}
+
+/*Textes*/
+.text {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Nunito";
+}
+
+/*Flèche descriptif*/
+.hide-block {
+  display: none;
+}
+
+.show-block {
+  display: block;
+}
+
+/*Descriptif*/
+.block-text {
+  color: black;
+  text-align: center;
+  background-color: rgba(18, 106, 188, 0.1);
+  padding: 2px;
+  margin-top: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  bottom: 15px;
+}
+
+/*Main*/
+.divimg {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+}
+
+.p2 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  color: white;
+  font-family: "Nunito";
+}
+
+.activities {
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Img*/
+
+.imgnewyear {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.section-n .imgnewyear {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.section-n:hover .imgnewyear {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+}
+
+.section-n {
+  margin-bottom: 30px;
+}
+.section2 {
+  margin-bottom: 15px;
+}
+.containt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+}
+.img2 {
+  width: 100%;
+  height: auto;
+}
+.img3 {
+  width: 100%;
+  height: auto;
+}
+
+/*Textes*/
+.text {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Nunito";
+}
+
+/*Flèche descriptif*/
+.hide-block {
+  display: none;
+}
+
+.show-block {
+  display: block;
+}
+
+/*Descriptif*/
+.block-text {
+  color: black;
+  text-align: center;
+  background-color: rgba(18, 106, 188, 0.1);
+  padding: 2px;
+  margin-top: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  bottom: 15px;
+}
+
+/* ---------- DESKTOP----------- */
+
 /* footer */
 footer {
   display: grid;
@@ -393,55 +1058,6 @@ footer a i {
     height: 75px;
   }
 
-  .d-1 {
-    width: 8%;
-    margin-left: 2px;
-  }
-  ​ .d-2 {
-    width: 16%;
-    margin-left: 2px;
-  }
-
-  .d-3 {
-    width: 24%;
-    margin-left: 2px;
-  }
-  ​ .d-4 {
-    width: 32%;
-    margin-left: 2px;
-  }
-  ​ .d-5 {
-    width: 40%;
-    margin-left: 2px;
-  }
-  ​ .d-6 {
-    width: 48%;
-    margin-left: 2px;
-  }
-  ​ .d-7 {
-    width: 56%;
-    margin-left: 2px;
-  }
-  ​ .d-8 {
-    width: 64%;
-    margin-left: 2px;
-  }
-  ​ .d-9 {
-    width: 72%;
-    margin-left: 2px;
-  }
-  ​ .d-10 {
-    width: 80%;
-    margin-left: 2px;
-  }
-  ​ .d-11 {
-    width: 88%;
-    margin-left: 2px;
-  }
-  ​ .d-12 {
-    width: 100%;
-  }
-
   .mobile {
     display: none;
   }
@@ -541,6 +1157,280 @@ footer a i {
   .content-text h1 {
     font-size: 3em;
   }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: auto;
+  }
+  article {
+    margin: 5px;
+  }
+  .p {
+    font-size: 21px;
+  }
+  .h1 {
+    font-size: 28px;
+    margin-top: -25px;
+    margin-bottom: -35px;
+  }
+  .hr1 {
+    width: 230px;
+    margin-bottom: 10px;
+  }
+  .button {
+    font-size: 12px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+  .img2 {
+    width: 100%;
+    height: 22.25em;
+  }
+  .section article {
+    width: 50%;
+    margin-top: 25px;
+  }
+  .article .img1 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .article:hover .img1 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.02);
+  }
+  .article .img2 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .article:hover .img2 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.02);
+  }
+
+  .features h2 {
+    font-size: 5em;
+  }
+  /* --------- DESKTOP slider-------- */
+  div#slider {
+    width: 34%;
+  }
+
+  /* --------- DESKTOP grid vr -------- */
+  .grid-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 80%;
+    margin-left: 22em;
+  }
+
+  .visual {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .visual img {
+    width: 70%;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .second {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .three {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .four {
+    grid-column: 4;
+    grid-row: 4;
+  }
+  .five {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .six {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .seven {
+    grid-column: 4;
+    grid-row: 3;
+  }
+
+  .img-grid {
+    cursor: pointer;
+  }
+
+  /* --------- DESKTOP articles -------- */
+
+  .container-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container-articles .description {
+    width: 45%;
+    padding: 1em;
+  }
+
+  .description p {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .description h3 {
+    text-align: left;
+    font-size: 2em;
+  }
+  /* --------- DESKTOP catalogue -------- */
+
+  .attractions-proposal h2 {
+    font-size: 3em;
+  }
+  div#slider figure {
+    position: static;
+  }
+
+  /* Page contact */
+
+  .content-contact article {
+    width: 47%;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .map {
+    height: 25em;
+  }
+
+  .content-contact article ul {
+    width: 60%;
+    margin: 80px auto;
+    font-size: 16px;
+  }
+
+  .content-contact article {
+    padding-bottom: 50px;
+  }
+
+  /* Page login */
+  .img-main {
+    height: 36.5em;
+  }
+
+  .img-main form {
+    width: 330px;
+  }
+  form {
+    text-align: center;
+  }
+
+  /* Page shop */
+
+  article.img {
+    width: 50%;
+    height: 380px;
+    margin: auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .description {
+    width: 45%;
+  }
+
+  .price {
+    width: 45%;
+  }
+
+  .star-wars h2 {
+    font-size: 5em;
+  }
+
+  .pirates h2 {
+    font-size: 5em;
+  }
+
+  .castle h2 {
+    font-size: 6em;
+  }
+
+  .attractions p {
+    margin: 1em 6em 2em 6em;
+    font-size: 1.5em;
+  }
+
+  .button-attractions {
+    width: 20%;
+    font-size: 2em;
+  }
+  .container-button {
+    padding-bottom: 2em;
+  }
+
+  .containt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 15px;
+  }
+  .text {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    width: 98%;
+  }
+  .img3 {
+    margin-left: 5px;
+  }
+  .img2 {
+    margin-left: 3px;
+  }
+  .divimg {
+    height: 450px;
+  }
+  .p2 {
+    font-size: 40px;
+    font-family: "Nunito";
+  }
+  .activities {
+    font-size: 28px;
+  }
+  .block-text {
+    font-size: 18px;
+  }
+
+  /* product */
 
   /* Footer */
   footer {
