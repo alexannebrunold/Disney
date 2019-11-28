@@ -1,0 +1,11 @@
+.color-bg-disney {
+  background-color: rgb(18, 106, 188);
+  border: 1px solid rgb(18, 106, 188);
+  color: white;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.color-white {
+  color: white;
+}
