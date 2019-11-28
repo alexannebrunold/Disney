@@ -132,7 +132,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
   height: 90%;
 }
 
@@ -160,9 +159,9 @@ nav {
 .h1{
   text-align: center;
   font-family: 'New Waltograph';
-  font-size: 14px;
-  margin-top: -15px;
-  margin-bottom: -18px;
+  font-size: 16px;
+  margin-top: -45px;
+  margin-bottom: -25px;
 }
 
 .hr1{
@@ -181,9 +180,9 @@ nav {
   height:auto;
 }
 
-p{
+.p{
   text-align: center;
-  font-size: 10px;
+  font-size: 18px;
   font-family: 'Nunito', sans-serif;
 }
 /*Bouton*/
@@ -213,32 +212,20 @@ p{
     justify-content: space-around;
     justify-items: auto;
   }
-  /*.img1{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }*/
-
-    
-   
- 
-
   article{
     margin:5px;
   }
-  p{
-    font-size: 16px;
+  .p{
+    font-size: 21px;
   }
   .h1{
-    font-size: 30px;
+    font-size: 28px;
     margin-top: -25px;
     margin-bottom: -35px;
   }
   .hr1{
     width: 230px;
-    margin-bottom: 10px;à
+    margin-bottom: 10px;
   }
   .button{
     font-size: 12px;
