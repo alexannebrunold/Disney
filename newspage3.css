@@ -1,14 +1,46 @@
 /*Main*/
+.divimg{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+
+}
+
+.p{
+  position: absolute;
+  z-index:1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  color: white;
+  font-family: 'Nunito';
+
+}
+
+.activities{
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
 
 /*Img*/
 
 .imgnewyear{
+  position: absolute;
+  z-index: -1;
   width: 100%;
-  height: auto;
-}
-
-.imgnewyear p{
-  margin: 1Opx;
+  height: 100%;
+  left:0;
+  top:0;
 }
 
 .section .imgnewyear {
@@ -23,27 +55,101 @@
   
 }
 
-.containt img{
+.section{
+  margin-bottom: 30px;
+}
+.section2{
+  margin-bottom: 15px;
+}
+.containt{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 25px;
 }
 
 .text{
   text-align: center;
-  font-size: 10px;
+  font-size: 18px;
   font-family: 'Nunito';
 }
 
+.h4{
+  font-size: 16px;
+}
+
+.img1{
+  width: 100%;
+  height: auto;
+}
+.img2{
+  width: 100%;
+  height: auto;
+}
+.img3{
+  width: 100%;
+  height: auto;
+}
+
+/*Flèche descriptif*/
+.hide-block{
+  display: none;
+}
+
+.show-block{
+  display: block;
+}
+
+/*Descriptif*/
+.block-text{
+  color: black;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.1);
+  padding:2px;
+  margin-top: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  bottom: 15px;
+}
+
+.h4{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/*Media*/
 @media (min-width:768px){
   .containt {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
     margin-top: 15px;
   }
   .text{
     text-align: center;
     font-size: 16px;
+  }
+
+  .img1, .img2, .img3{
+   width: 98%;
+  }
+  .img3{
+    margin-left: 5px;
+  }
+  .img2{
+    margin-left: 3px;
+  }
+  .divimg{
+    height:450px;
+  }
+  .p{
+    font-size: 40px;
+    font-family: 'Nunito';
+  }
+  .activities{
+    font-size: 28px;
+  }
+  .block-text{
+    font-size:25px;
   }
 }
