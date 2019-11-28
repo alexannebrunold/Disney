@@ -5,22 +5,14 @@ justify-content:space-between ;
 align-content: space-between;
 }
 
-video{
-  width: 100%;
-  height: auto;
-}
 
 h1{
   font-family: 'Nunito';
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   font-weight:bold;
 }
-p{
-  font-size: 10px;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-}
+
 
 hr{
   margin-top: 25px;
@@ -31,16 +23,35 @@ hr{
 
 /*Main*/
 
-.iframe{
-  width: 100%;
-  height: auto;
-}
+/* Textes */
+
 .p{
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   vertical-align: center;
   font-family: 'Nunito', sans-serif;
 }
+
+.underline{
+  text-decoration: underline;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+/* Vidéo */
+.iframe{
+  width: 100%;
+  height: auto;
+}
+
+video{
+  width: 100%;
+  height: auto;
+}
+
+/* Images */ 
 
 .déguisement{
   width: 100%;
@@ -48,6 +59,7 @@ hr{
  
 }
 
+/* Button */
 aside .button{
   display: block;
   margin-left: 38%;
@@ -72,18 +84,20 @@ aside .button{
   color: white;
 }
 
+/*Média */
+
 @media (min-width:768px){
-  p{
-    font-size: 18px;
-  }
   .p{
-    font-size: 18px;
+    font-size: 21px;
+  }
+  .underline{
+    font-size: 24px;
   }
   h1{
     font-size: 30px;
   }
   .button{
-    font-size: 16px;
+    font-size: 12px;
     width: 90px;
     text-align: center;
   }
