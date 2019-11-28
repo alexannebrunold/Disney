@@ -23,14 +23,16 @@
 
 }
 
+.hr{
+  width: 90%;
+}
+
 .activities{
   text-align: center;
   font-family: 'Nunito';
   font-size: 18px;
   font-weight: bold;
 }
-
-
 
 /*Img*/
 
@@ -67,16 +69,6 @@
   margin-top: 25px;
 }
 
-.text{
-  text-align: center;
-  font-size: 18px;
-  font-family: 'Nunito';
-}
-
-.h4{
-  font-size: 16px;
-}
-
 .img1{
   width: 100%;
   height: auto;
@@ -88,6 +80,13 @@
 .img3{
   width: 100%;
   height: auto;
+}
+
+/*Textes*/
+.text{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Nunito';
 }
 
 /*Flèche descriptif*/
@@ -103,17 +102,12 @@
 .block-text{
   color: black;
   text-align: center;
-  background-color:rgba(0, 0, 0, 0.1);
+  background-color:rgba(18, 106, 188, 0.1);
   padding:2px;
   margin-top: 0;
   margin-left: 2px;
   margin-right: 2px;
   bottom: 15px;
-}
-
-.h4{
-  margin-top: 0;
-  margin-bottom: 5px;
 }
 
 /*Media*/
@@ -127,7 +121,7 @@
   }
   .text{
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .img1, .img2, .img3{
@@ -150,6 +144,7 @@
     font-size: 28px;
   }
   .block-text{
-    font-size:25px;
+    font-size:18px;
+
   }
 }
