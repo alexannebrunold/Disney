@@ -10,10 +10,16 @@ video{
   height: auto;
 }
 
-p{
+h1{
+  font-family: 'Nunito';
   font-size: 14px;
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-weight:bold;
+}
+p{
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
 }
 
 hr{
@@ -25,18 +31,21 @@ hr{
 
 /*Main*/
 
+.iframe{
+  width: 100%;
+  height: auto;
+}
 .p{
-  font-size: 14px;
+  font-size: 10px;
   text-align: center;
   vertical-align: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .déguisement{
-  width: 80%;
+  width: 100%;
   height: auto;
-  float: left;
-  margin-left: 30px;
+ 
 }
 
 aside .button{
@@ -50,34 +59,44 @@ aside .button{
   padding: 6px 10px;
   text-align: center;
   width: 50px;
-  font-size: 12px;
+  font-size: 9px;
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 7px;
 }
 
 .button:hover{
   background-color: rgb(18, 106, 188);
+  border: 1px solid rgb(18, 106, 188);
+  color: white;
 }
 
-/*Pagination*/
+@media (min-width:768px){
+  p{
+    font-size: 18px;
+  }
+  .p{
+    font-size: 18px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .button{
+    font-size: 16px;
+    width: 90px;
+    text-align: center;
+  }
 
-ul.pagination{
-  display: flex;
-  flex-direction: row;
- list-style: none;
+  aside .button{
+    margin-left:45%;
+    margin-bottom: 15px;
+  }
+  .iframe{
+    width: 100%;
+    height: 500px;
+  }
+  hr{
+    width: 100%;
+  }
 }
-
-ul.pagination a{
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  border-radius: 100%;
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  text-align: center;
-  cursor: pointer;
-}
-
