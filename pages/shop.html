@@ -115,7 +115,7 @@
         <div class="container-fluid">
           <h1 class="text-center">Boutique</h1>
           <section class="flex-box">
-            <article class="img">
+            <article class="img" id="img-product">
               <img src="../assets/img/boite-star-wars.png" alt="box-starwars" />
             </article>
             <form action="#" class="text-center">
@@ -135,7 +135,7 @@
             <div class="div">
               <article class="description">
                 <div class="content-product">
-                  <div class="content-product-text">
+                  <div class="content-product-text" id="content">
                     <p>
                       <strong> Star Wars</strong>
                       <strong> Descriptif du produit</strong>
@@ -182,42 +182,46 @@
                       <option value="4"> 4 </option>
                       <option value="5"> 5 </option>
                     </select>
+                    <input type="hidden" value="499.99" id="price"/>
                   </div>
 
                   <div class="form">
-                    <strong class="color-black">
-                      coût : 499.99 € + 1 casque (inclus)
+                    <strong class="color-black" id="change-price">
+                      coût : 499.99 € + 1 casque (inclus)<br><br>
+                      TOTAL : 499.99 € TTC
                     </strong>
                   </div>
                   <br>
                   <hr class="mobile">
                   <h1 class="color-black">2. Informations Personnelles</h1>
+                  <div id="retour"></div>
                   <div class="form">
-                    <label for="name"> Nom & Prénom</label>
-                    <input type="text" id="name" class="product element-form" />
+                    <label for="name"> Nom & Prénom*</label>
+                    <input type="text" id="name" class="product element-form require" />
                   </div>
                   <div class="form">
-                    <label for="email"> Email</label>
+                    <label for="email"> Email*</label>
                     <input
                       type="email"
                       id="email"
-                      class="product element-form"
+                      class="product element-form require"
                     />
                   </div>
+                  
                   <div class="form">
-                    <label for="phone"> Téléphone</label>
-                    <input type="tel" id="phone" class="product element-form" />
+                    <label for="phone"> Téléphone*</label>
+                    <input type="tel" id="phone" class="product element-form require" />
                   </div>
                   <div class="form">
-                    <label for="adress"> Adresse de livraison</label>
+                    <label for="adress"> Adresse de livraison*</label>
                     <input
                       type="text"
                       id="adress"
-                      class="product element-form"
+                      class="product element-form require"
                     />
                   </div>
                   <div class="form">
-                    <button class="button color-bg-disney">Commander</button>
+                    <button class="button color-bg-disney" type="submit" onclick="return false" id="commander">Commander</button>
                   </div>
                 </form>
               </article>
