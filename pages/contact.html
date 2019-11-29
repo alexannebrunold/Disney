@@ -77,7 +77,7 @@
             </li>
 
             <li>
-              <a href="contact.html" class="text-center">
+              <a href="contact.html" class="text-center contact">
                 <i class="icofont-chat"> </i> Contact</a
               >
             </li>
@@ -99,7 +99,7 @@
             </li>
 
             <li>
-              <a href="contact.html"> Contact</a>
+              <a href="contact.html" class="active"> Contact</a>
             </li>
           </ul>
         </div>
@@ -119,33 +119,34 @@
                     Nous-contacter
                   </h1>
                 </div>
-
+                
+                <div id="retour"></div>
                 <div class="padding-input text-left">
-                  <label>Nom complet</label>
+                  <label>Nom complet*</label>
 
                   <input
                     type="text"
                     placeholder="Entrez votre mot de passe ici"
-                    class="element-form"
+                    class="element-form require"
                   />
                 </div>
 
                 <div class="padding-input text-left">
-                  <label>Email</label>
+                  <label>Email*</label>
 
                   <input
                     type="text"
                     placeholder="Entrez votre email ici"
-                    class="element-form"
-                  />
+                    class="element-form require" id="email"
+                  /><span id="msg-email"></span>
                 </div>
 
                 <div class="padding-input text-left">
-                  <label>Message</label>
+                  <label>Message*</label>
 
                   <textarea
                     rows="5"
-                    class="element-form"
+                    class="element-form require"
                     placeholder="Ecrivez votre message ici"
                   ></textarea>
                 </div>
@@ -153,7 +154,7 @@
                 <div class="padding-input">
                   <button
                     type="submit"
-                    class="button block-center color-bg-disney"
+                    class="button block-center color-bg-disney" id="contact" onclick="return false;"
                   >
                     Envoyer
                   </button>
@@ -214,7 +215,7 @@
 
               <li><a href="news.html">Actualités</a></li>
 
-              <li><a href="contact.html"> Contact</a></li>
+              <li><a href="contact.html" class="active"> Contact</a></li>
             </ul>
           </div>
 

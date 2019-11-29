@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <header>
-        <a class="logo" href="index.html">
+        <a class="logo" href="../index.html">
           <img
             class="mobile"
             src="../assets/img/chateau-logo-jarce-ta-chatte-white.png"
@@ -36,7 +36,7 @@
           />
         </a>
 
-        <a href="../login.html" class="users" title="se connecter">
+        <a href="login.html" class="users" title="se connecter">
           <i class="icofont-user"></i>
           <span class="desktop text-small bonhomme">Connexion</span></a
         >
@@ -65,7 +65,7 @@
             </li>
 
             <li>
-              <a href="shop.html" class="text-center">
+              <a href="shop.html" class="text-center active">
                 <i class="icofont-prestashop"> </i> boutique</a
               >
             </li>
@@ -91,7 +91,7 @@
             </li>
 
             <li>
-              <a href="shop.html"> boutique</a>
+              <a href="shop.html" class="active"> boutique</a>
             </li>
 
             <li>
@@ -161,12 +161,12 @@
 
               <article class="price">
                 <form action="">
-                  <h1>1. Précommande</h1>
+                  <h1 class="color-black">1. Précommande</h1>
                   <i>
                     *inclus un casque par box. <br />
                     *prix unitaire du casque:
-                    <strong> 399.99 € TTC </strong>
-                  </i>
+                    <strong class="color-black"> 399.99 € TTC </strong>
+                  </i><br><br>
                   <div class="form">
                     <label for="numbers">
                       Quantité de casques VR.
@@ -185,12 +185,13 @@
                   </div>
 
                   <div class="form">
-                    <strong>
+                    <strong class="color-black">
                       coût : 499.99 € + 1 casque (inclus)
                     </strong>
                   </div>
-
-                  <h1>2. Informations Personnelles</h1>
+                  <br>
+                  <hr class="mobile">
+                  <h1 class="color-black">2. Informations Personnelles</h1>
                   <div class="form">
                     <label for="name"> Nom & Prénom</label>
                     <input type="text" id="name" class="product element-form" />
@@ -216,7 +217,7 @@
                     />
                   </div>
                   <div class="form">
-                    <button class="button">Commander</button>
+                    <button class="button color-bg-disney">Commander</button>
                   </div>
                 </form>
               </article>
@@ -247,7 +248,7 @@
                 <a href="../index.html"> Accueil</a>
               </li>
 
-              <li><a href="shop.html">Boutique</a></li>
+              <li><a href="shop.html" class="active">Boutique</a></li>
 
               <li><a href="news.html">Actualités</a></li>
 

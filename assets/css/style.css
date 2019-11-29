@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: "pirate_scrollregular";
-  src: url("pirate_scroll-webfont.woff2") format("woff2"),
-    url("pirate_scroll-webfont.woff") format("woff");
+  src: url("../fonts/pirate_scroll-webfont.woff2") format("woff2"),
+    url("../fonts/pirate_scroll-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -58,6 +58,8 @@
   }
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +70,7 @@ body {
   padding: 0;
   /*font-family: "Noto Sans", sans-serif;*/
   font-family: "nunitoregular", sans serif;
-  font-size: 0.9em;
+  font-size: 22px;
 }
 
 h1,
@@ -77,7 +79,7 @@ h2 {
 }
 
 .element-form {
-  width: 100%;
+  width: 98%;
   border: 1px solid #d4d4d4;
   border-radius: 4px;
   font-size: 16px;
@@ -86,6 +88,35 @@ h2 {
   display: block;
   color: #495057;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding-left:7px;
+  padding-right: 5px;
+  font-size:18px;
+}
+
+.content-contact ul li,
+.price,
+.movie-news,
+.p3,
+.containt {
+  color: gray;
+  font-size: 20px;
+  padding:9px 0 9px 0;
+}
+
+
+
+.content-contact h1 {
+  font-size: 1.1em;
+  padding-bottom: 8px;
+}
+
+select option {
+  font-size: 16px;
+}
+
+.price h1 {
+  margin-bottom: 10px;
+  font-family: "nunitoregular", sans-serif;
 }
 
 .text-center {
@@ -98,6 +129,12 @@ a {
   text-transform: uppercase;
 }
 
+label {
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -105,17 +142,17 @@ ul {
 }
 
 .clearfix {
-  margin-top: 48px;
+  margin-top: 50px;
 }
 
 .text-small {
-  font-size: 12px;
+  font-size: 17px;
 }
 
 /* header */
 header {
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: fixed;
   background-color: rgb(18, 106, 180);
   color: white;
@@ -138,7 +175,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 60px;
+  width: 75px;
   position: relative;
   top: -7px;
 }
@@ -150,7 +187,7 @@ header a {
 .menu-burger {
   grid-column: 21;
   grid-row: 1;
-  font-size: 23px;
+  font-size: 40px;
   position: relative;
   top: 6px;
 }
@@ -158,7 +195,7 @@ header a {
 .shop {
   grid-column: 19;
   grid-row: 1;
-  font-size: 23px;
+  font-size: 39px;
   position: relative;
   top: 6px;
 }
@@ -166,7 +203,7 @@ header a {
 .users {
   grid-column: 17;
   grid-row: 1;
-  font-size: 20px;
+  font-size: 32px;
   position: relative;
   top: 8px;
 }
@@ -186,6 +223,8 @@ nav {
   bottom: 0;
   z-index: 9999;
   box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(10px);
 }
 
 .close {
@@ -208,7 +247,7 @@ nav {
 }
 
 .close #close i {
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .mobile-menu ul {
@@ -221,6 +260,7 @@ nav {
 
 .mobile-menu li {
   padding: 10px 0 10px 0;
+  font-size:22px;
 }
 
 .mobile-menu a:hover {
@@ -228,12 +268,41 @@ nav {
 }
 
 .mobile-menu i {
-  font-size: 18px;
+  font-size: 25px;
   position: relative;
   top: 2px;
 }
 
+a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /* Main */
+
+/* The alert message box */
+.alert {
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
 main {
   display: grid;
   grid-template-columns: repeat(22, 1fr);
@@ -249,7 +318,7 @@ main {
 
 .bg-video {
   width: 100%;
-  height: 15rem;
+  height: 23rem;
   position: relative;
   top: -3px;
 }
@@ -320,8 +389,9 @@ main {
 
 .section article {
   width: 100%;
+  margin-top: 25px;
 }
-article {
+.articles {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
@@ -331,7 +401,39 @@ article {
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 20px;
+  font-size: 1.3em;;
+}
+
+.section-n h2{
+  font-size: 25px;
+  margin-bottom: 13px;
+  margin-top: 15px;
+  font-family: "nunitoregular", sans-serif;
+}
+
+.movie-news {
+  width: 100%;
+  line-height: 28px;
+}
+
+.asside {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.asside .disguise {
+  width: 85%;
+}
+
+.banner-attr {
+  width: 100%;
+  height: 8em;
+}
+
+.banner-attr img{
+  width: 100%;
+  height: 100%;
 }
 /*Images*/
 .img1 {
@@ -348,7 +450,7 @@ h1 {
 .p {
   text-align: center;
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  line-height: 25px ;
 }
 
 /* ------------ Features ------------- */
@@ -361,7 +463,7 @@ h1 {
 
 .features h2 {
   font-family: "New Waltograph", sans serif;
-  font-size: 2.5em;
+  font-size: 1.6em;
   color: #253b56;
   text-align: center;
 }
@@ -383,17 +485,21 @@ h1 {
   display: flex;
 }
 
-img {
+.container-features img,
+img.img-product {
   width: 50%;
   transition: width 0.5s;
 }
-img:hover {
+.container-features img:hover,
+img.img-product:hover {
   width: 60%;
 }
 
+
+
 article h3 {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.3em;
   font-family: "nunitoregular", sans serif;
   text-align: center;
@@ -412,7 +518,7 @@ article p {
 }
 .attractions-proposal h2 {
   font-family: "New Waltograph", sans serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: white;
   text-align: center;
   padding: 0.5em;
@@ -436,7 +542,7 @@ div#slider figure {
 
 div#slider figure .slide {
   display: inline-block;
-  width: 20%;
+  width: 23%;
   height: auto;
   position: relative;
 }
@@ -465,11 +571,13 @@ div#slider figure .slide img {
   color: white;
   font-family: "nunitoregular";
   border: 1px solid white;
-  padding: 0 0.5em 0.3em 0.5em;
+  padding: 0.4em 0.5em 0.3em 0.5em;
   border-radius: 0.2em;
-  font-size: 0.7em;
+  font-size: 0.5em;
   position: relative;
-  top: -0.5em;
+  top: -0.8em;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .slide .pointer:hover {
@@ -490,7 +598,7 @@ div#slider figure .slide img {
 
 .content-contact article {
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 textarea.element-form {
@@ -522,7 +630,7 @@ article ul li i {
 .img-main {
   grid-row: 1;
   grid-column: 1 / span 22;
-  height: 30em;
+  height: 22em;
   position: relative;
   top: -8px;
   display: flex;
@@ -539,10 +647,10 @@ article ul li i {
   display: block;
   color: black;
   border: 1px solid black;
-  padding: 8px 15px;
+  padding: 14px 15px;
   text-align: center;
   min-width: 80px;
-  font-size: 12px;
+  font-size: 21px;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
@@ -554,14 +662,17 @@ form a {
 
 form hr {
   width: 65%;
+  margin: auto;
 }
 
 .text-small {
   text-transform: lowercase;
 }
 
-.text-decoration:hover {
+.underline {
   text-decoration: underline;
+  padding: 10px 0 10px 0;
+  font-size: 24px;
 }
 
 .button:hover {
@@ -637,6 +748,18 @@ form hr {
   width: 100%;
 }
 
+.flex-box article p,
+.flex-box article ul {
+  
+  font-size: 20px;
+  line-height: 25px;
+  color:grey;
+}
+
+hr.mobile{
+  margin: auto;
+}
+
 article.img {
   width: 100%;
   height: 200px;
@@ -648,10 +771,10 @@ article.img img {
 }
 
 article .product.element-form {
-  margin-left: 2em;
-  height: 32px;
+  height: 42px;
+  font-size: 19px;
   line-height: 50px;
-  width: 86%;
+  width: 95%;
 }
 
 .content-product-text {
@@ -685,12 +808,9 @@ hr.mobile {
 
 .form button {
   margin: auto;
-  font-size: 14px;
+  font-size: 23px;
 }
 
-.attractions img {
-  width: 100%;
-}
 
 .star-wars h2 {
   font-family: "distant_galaxyregular";
@@ -702,8 +822,7 @@ hr.mobile {
 .pirates h2 {
   font-family: "pirate_scrollregular";
   text-align: center;
-  margin: 0.5em;
-  font-size: 2em;
+  margin-top: 0.5em;
 }
 
 .castle h2 {
@@ -713,34 +832,13 @@ hr.mobile {
   font-size: 2.2em;
 }
 
+.attractions{
+  margin-bottom: 1.5em;
+}
+
 .attractions p {
-  text-align: justify;
-  margin: 1.5em;
-}
-/* ---------- Bouton pré commande----------- */
-.button-attractions {
-  background-color: #136ab4;
-  border: none;
-  padding: 0.6em 1em;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.2em;
-  color: white;
-  border-radius: 0.5em;
-  cursor: pointer;
-  margin: auto;
-  width: 40%;
-}
-
-.button-attractions:hover {
-  box-shadow: 0.2em 0.2em 0.65em grey;
-}
-
-.container-button {
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 1em;
+  margin: 1.5em 0.02em 0.5em 0.02em;
+  line-height: 25px;
 }
 
 /*Main*/
@@ -805,6 +903,11 @@ hr.mobile {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+}
+
+.containt p {
+  
+  font-family: "nunitoregular", sans-serif;
 }
 
 .img3 {
@@ -898,19 +1001,16 @@ hr.mobile {
 .section2 {
   margin-bottom: 15px;
 }
-.containt {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
+
+.article img {
+  height: 180px;
 }
 
 .img1 {
   width: 100%;
-  height: auto;
 }
 .img2 {
   width: 100%;
-  height: auto;
 }
 .img3 {
   width: 100%;
@@ -938,7 +1038,7 @@ hr.mobile {
   color: black;
   text-align: center;
   background-color: rgba(18, 106, 188, 0.1);
-  padding: 2px;
+  padding: 8px 4px 8px 4px;
   margin-top: 0;
   margin-left: 2px;
   margin-right: 2px;
@@ -956,6 +1056,7 @@ footer {
   min-height: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   padding-top: 10px;
+  font-size: 18px;
 }
 
 .container-footer {
@@ -1045,6 +1146,8 @@ footer a i {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   margin-top: 15px;
+  padding-bottom: 0.7em;
+  padding-top: 0.7em;
 }
 
 .copyright p {
@@ -1054,6 +1157,92 @@ footer a i {
 }
 
 @media (min-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+.content-contact ul li,
+.price,
+.movie-news,
+.p3,
+.containt {
+  font-size: 15.5px;
+  padding:9px 0 9px 0;
+}
+
+.asside {
+  text-align: center;
+}
+
+.img-class {
+  width: 100%;
+  height: 394px;
+  position: relative;
+}
+
+.img-class img {
+  position: absolute;
+  width: 350px;
+  height: 300px;
+}
+
+.img-class img:nth-child(1) {
+  z-index: 1;
+  top:0;
+  left: 0;
+}
+
+.img-class img:nth-child(2) {
+  z-index: 2;
+  bottom:0;
+  left: 0;
+  width: 450px;
+}
+
+.asside .block-righ{
+  width: 45%;
+  order: 2;
+}
+
+.asside .block-left {
+  width: 45%;
+  order:1;
+}
+
+h1 {
+  font-size: 2.5em;   
+}
+
+.section2 img {
+  width: 100%;
+  height: 230px;
+}
+
+.asside,
+.movie-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.movie-news .iframe, 
+.movie-news .right-block {
+  width: 45%;
+  height: 260px;
+}
+
+
+.attractions a {
+  width: 30%;
+  margin: auto;
+}
+  p {
+    
+    line-height: 22px;
+  }
+
   header {
     height: 75px;
   }
@@ -1063,7 +1252,7 @@ footer a i {
   }
 
   .clearfix {
-    height: 30px;
+    height: 25px;
   }
 
   /* Header */
@@ -1089,6 +1278,10 @@ footer a i {
     height: 40px;
   }
 
+  .content-contact h1,
+  .img-main h1 {
+    font-size: 1.8em;
+  }
   .users .bonhomme {
     left: 1px;
   }
@@ -1096,6 +1289,11 @@ footer a i {
   .menu-burger {
     display: none;
   }
+
+  .banner-attr {
+    width: 100%;
+    height: 32em;
+}
 
   .shop {
     grid-column: 20 / span 2;
@@ -1141,6 +1339,10 @@ footer a i {
 
   /* Main */
 
+  .article img {
+    height: 300px;
+  }
+  
   main {
     min-height: 410px;
   }
@@ -1158,6 +1360,12 @@ footer a i {
     font-size: 3em;
   }
 
+
+  .alert {
+    font-size: 1.2em;
+  }
+  
+
   .section {
     display: flex;
     flex-direction: row;
@@ -1167,9 +1375,7 @@ footer a i {
   article {
     margin: 5px;
   }
-  .p {
-    font-size: 21px;
-  }
+
   .h1 {
     font-size: 28px;
     margin-top: -25px;
@@ -1180,12 +1386,12 @@ footer a i {
     margin-bottom: 10px;
   }
   .button {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .img1 {
     width: 100%;
-    height: auto;
+    height: 22.25em;
   }
   .img2 {
     width: 100%;
@@ -1221,7 +1427,11 @@ footer a i {
   }
   /* --------- DESKTOP slider-------- */
   div#slider {
-    width: 34%;
+    width: 29%;
+  }
+
+  .slide .pointer a {
+    padding: 1em 1em 0.7em 1em;
   }
 
   /* --------- DESKTOP grid vr -------- */
@@ -1313,8 +1523,13 @@ footer a i {
   /* Page contact */
 
   .content-contact article {
-    width: 47%;
+    width: 45%;
     padding: 10px 20px 10px 20px;
+  }
+
+  form hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .map {
@@ -1346,7 +1561,7 @@ footer a i {
   /* Page shop */
 
   article.img {
-    width: 50%;
+    width: 35%;
     height: 380px;
     margin: auto;
   }
@@ -1369,20 +1584,20 @@ footer a i {
   }
 
   .star-wars h2 {
-    font-size: 5em;
+    font-size: 3.7em;
   }
 
   .pirates h2 {
-    font-size: 5em;
+    font-size: 3.7em;
   }
 
   .castle h2 {
-    font-size: 6em;
+    font-size: 3.7em;
   }
 
   .attractions p {
     margin: 1em 6em 2em 6em;
-    font-size: 1.5em;
+    font-size: 1.15em;
   }
 
   .button-attractions {

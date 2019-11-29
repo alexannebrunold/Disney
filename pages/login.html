@@ -36,7 +36,7 @@
           />
         </a>
 
-        <a href="login.html" class="users" title="se connecter">
+        <a href="login.html" class="users active" title="se connecter">
           <i class="icofont-user"></i>
           <span class="desktop text-small bonhomme">Connexion</span></a
         >
@@ -126,33 +126,34 @@
                 Connexion
               </h1>
             </div>
+            <div id="retour"></div>
             <div class="padding-input text-left">
-              <label>Email</label>
+              <label>Email*</label>
               <input
                 type="text"
                 placeholder="Entrez votre email ici"
-                class="element-form"
+                class="element-form require"
               />
             </div>
             <div class="padding-input text-left">
-              <label>Mot De Passe</label>
+              <label>Mot De Passe*</label>
               <input
                 type="password"
                 placeholder="Entrez votre mot de passe ici"
-                class="element-form"
+                class="element-form require"
               />
             </div>
             <div class="padding-input">
-              <button type="submit" class="button block-center color-bg-disney">
+              <button type="submit" class="button block-center color-bg-disney" id="login" onclick="return false;">
                 Se connecter
               </button>
             </div>
             <hr />
-            <a href="#" class="text-small text-decoration"
+            <a href="" class="text-small text-decoration"
               >Mot de passe oublié ?</a
             >
             |
-            <a href="#" class="text-small text-decoration">Créer un compte </a>
+            <a href="" class="text-small text-decoration">Créer un compte </a>
           </form>
         </div>
       </main>
