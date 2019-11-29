@@ -107,14 +107,12 @@ if(product){
       document.getElementById('img-product').innerHTML='<img src="../assets/img/boite-star-wars.png" alt="box-starwars" />';
       var content = "";
       content+='<p>';
-      content+='<strong> Star Wars</strong>';
+      content+='<strong> Star Wars HyperSpace Mountain</strong>';
       content+='<strong> Descriptif du produit</strong>';
       content+='<br /><br />';
-      content+="La box Pocket Disney est le parfait alliage entre la magie Disney et le confort de votre doux foyer. Vivez vos plus belles émotions féériques ou à sensation grâce à ce kit. Il comprend :";
+      content+="Plonger au coeur de l'action Au volant de votre vaisseau spatial, combattez l'Empire depuis chez vous à l'aide de notre nouveau produit Pocket disney. Montez votre maquette du Star Wars Hyperspace Mountain et engagez-vous dans l’Alliance rebelle. Muni de votre casque de réalité virtuel, assistez à un briefing de l’Amiral Ackbar.Sur fond de rafales de tirs, de sensations fortes et du sublime thème musical de Star Wars™, Pocket Disney Star Wars Hyperspace Mountain est une expérience qui laissera bouche bée les plus fervents adeptes de la Force et des technologies innovantes.";
       content+='</p>';
       content+='<ul>';
-      content+='<li>545</li>';
-      content+='<li>Un Move Hub avec deux moteurs intégrés, ports d’entrée / de sortie et capteur de mouvement</li>';
       content+='<li>Un capteur de distance et de couleurs</li>';
       content+='<li>Un moteur équipé d’un Tachymètre</li>';
       content+='</ul>';
